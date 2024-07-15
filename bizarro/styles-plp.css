@@ -1,0 +1,10 @@
+.page-with-filter.page-products .page-main .columns .products-grid ol.products li.product-item .product-item-info .product-item-details .price-box {
+    margin: 0 35px;
+}
+.product-item .price-box {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.newGreen {
+    color: green;
+}
