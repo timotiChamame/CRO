@@ -1,0 +1,14 @@
+.hideAB {
+    display: none !important;
+}
+
+.colorsAB {
+    background-color: black !important;
+    color: white !important;
+}
+
+@media (max-width: 468px) {
+    .hideMobileAB {
+        display: none !;
+    }
+}

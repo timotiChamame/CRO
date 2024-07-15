@@ -1,0 +1,187 @@
+<div class="home-navbar justify-content-center container pt-1">
+    <ul class="navbar-nav">
+       <li class="nav-item ng-star-inserted dropdown">
+          <div class="d-flex justify-content-between align-items-center">
+             <div> <a routerlinkactive="active" class="nav-link with-items d-flex align-items-center" href="/buscar"> Categorías <i class="d-block fa fa-chevron-down ng-star-inserted ml-2" aria-hidden="true"></i></a> </div>
+          </div>
+          <div class="dropdown-menu ng-star-inserted custom">
+             <div class="content-dropdown ml-3 my-2 d-flex ml-1">
+                <div class="principal"> <a class="d-flex appended mt-1" href="/autofrecuente"><img src="https://ik.imagekit.io/autoenlinea/Banner_AF_9ae547c02c_62eYzJkqs.png" alt="."></a><a class="d-flex appended mt-1" href="/autofrecuente"><img src="https://ik.imagekit.io/autoenlinea/Banner_AF_9ae547c02c_62eYzJkqs.png" alt="."></a></div>
+             </div>
+          </div>
+       </li>
+    </ul>
+    <ul class="navbar-nav">
+     <li class="nav-item ng-star-inserted">
+         <div class="d-flex justify-content-between align-items-center">
+            <div> <a routerlinkactive="active" class="nav-link" href="/autofrecuente"> Auto Frecuente </a> </div>
+         </div>
+      </li>
+      <li class="nav-item ng-star-inserted">
+         <div class="d-flex justify-content-between align-items-center">
+            <div> <a routerlinkactive="active" class="nav-link" href="/plan-a"> Plan A </a> </div>
+         </div>
+      </li>
+      <li class="nav-item ng-star-inserted">
+         <div class="d-flex justify-content-between align-items-center">
+            <div> <a routerlinkactive="active" class="nav-link" href="/recetas"> Recetas </a> </div>
+         </div>
+      </li>
+      <li class="nav-item ng-star-inserted dropdown nosotros-father">
+         <div class="d-flex justify-content-between align-items-center" style="cursor: pointer;"><a routerlinkactive="active" class="nav-link with-items d-flex align-items-center"> Nosotros <i class="d-block fa fa-chevron-down ng-star-inserted ml-2" aria-hidden="true"></i></a></div>
+         <div class="dropdown-menu ng-star-inserted nosotros">
+            <div class="content-dropdown ml-3 my-2 d-flex ml-1"> <a class="dropdown-item d-flex align-items-center justify-content-between ng-star-inserted" href="/proveedores"> <span class="d-block text-capitalize"> Proveedores </span> </a> <a class="dropdown-item d-flex align-items-center justify-content-between ng-star-inserted" href="/trabaja-con-nosotros"> <span class="d-block text-capitalize"> Trabajá con nosotros </span> </a> <a class="dropdown-item d-flex align-items-center justify-content-between ng-star-inserted" href="/responsabilidad-social"> <span class="d-block text-capitalize"> Responsabilidad social</span> </a> <a class="dropdown-item d-flex align-items-center justify-content-between ng-star-inserted" href="/ayuda"> <span class="d-block text-capitalize"> Preguntas Frecuentes </span> </a> <a class="d-flex align-items-center justify-content-between ng-star-inserted" href="#"> <img src="https://ik.imagekit.io/autoenlinea/Banner_AF_9ae547c02c_62eYzJkqs.png" alt="."> </a> </div>
+         </div>
+      </li>
+        <li class="d-flex justify-content-between align-items-center">
+                <a class="coleccionables" id="coleccionables" href="/coleccionables"> Coleccionables </a>
+                <div class="tag-menu px-3 py-1 ng-star-inserted" style="background: rgb(214, 241, 227); color: rgb(0, 125, 57);"> ¡Nueva! </div>
+        </li>
+    </ul>
+    <style>
+    .home-navbar{
+       height:100%;
+       margin: 0 auto;
+   }
+   .home-navbar .nav-link{
+       text-align:center;
+       color:#272727
+   }
+   .home-navbar .nav-link:focus-visible{
+       outline:none
+   }
+   .home-navbar .nav-link:not(.with-items):after{
+       content:none!important
+   }
+
+    .appended img {
+      background-image: url(https://ik.imagekit.io/autoenlinea/Banner_AF_9ae547c02c_62eYzJkqs.png);
+      width: 290px;
+      height: 125px;
+      background-size: cover;
+      background-position: left;
+      background-repeat: no-repeat;
+      display: flex;
+      left: -20px;
+      position: relative;
+      pointer-events: none;
+      cursor: pointer;
+   }
+
+   .bg-am-light{
+       background-color:#fbfbfb;
+       box-shadow:inset 0 8px 8px #2c3c2f0d
+   }
+   li.nav-item a{
+       font-family:BryantPro;
+       font-weight:500;
+       font-size:16px
+   }
+   .tag-menu{
+       font-size:12px;
+       border-radius:20px;
+       font-weight:700
+   }
+   .dropdown-menu{
+       min-width:265px;
+       width:auto;
+       font-size:14px;
+       box-shadow:0 4px 8px #2c3c2f1a;
+       border-radius:15px;
+       direction:rtl
+   }
+   .dropdown-menu .content-dropdown{
+       max-height:800px !important;
+   }
+   .dropdown-menu .content-dropdown .principal{
+       width:350px;
+       overflow-y:auto
+   }
+   .dropdown-menu .content-dropdown .sub-menu{
+       position:relative;
+       overflow-y:auto;
+       border-top:none;
+       border-left:1px solid #d4d4d4;
+       border-bottom:none;
+       border-right:none;
+       box-shadow:none!important;
+       border-radius:0!important
+   }
+   .show .nosotros{
+       display: flex;
+       justify-content: end;
+   }
+   .nosotros .content-dropdown {
+       flex-direction: column;
+   }
+ 
+   .dropdown-menu .content-dropdown .sub-menu-width{
+       width:350px
+   }
+   .dropdown-menu .content-dropdown .sub-menu-flex{
+       display:flex
+   }
+   .dropdown-menu .dropdown-item{
+       padding-left:1.5rem!important;
+       direction:ltr
+   }
+   .dropdown-menu .dropdown-item:hover{
+       color:inherit!important;
+       background-color:#e9f7f3;
+       border-top-right-radius:15px;
+       border-bottom-right-radius:15px
+   }
+   .dropdown-menu .dropdown-item:focus{
+       color:inherit!important;
+       background-color:#d6f1e3;
+       border-top-right-radius:15px;
+       border-bottom-right-radius:15px
+   }
+   .fidelizacion {
+       padding: 0 !important;
+   }
+   .nosotros img {
+      max-width: 100%;
+      margin: 5px 7px 0 7px;
+   }
+   .image-banner-menu{
+       margin:9px 16px 16px
+   }
+   .image-banner-menu img{
+       border-radius:16px
+   }
+   ::-webkit-scrollbar{
+       width:6px
+   }
+   ::-webkit-scrollbar-track{
+       background:#d4d4d4;
+       border-radius:8px
+   }
+   ::-webkit-scrollbar-thumb{
+       background:#989898;
+       border-radius:8px
+   }
+   ::-webkit-scrollbar-thumb:hover{
+       background:#7b7b7b
+   }
+
+   .coleccionables {
+      margin-right: 5px;
+      text-decoration: none;
+      color: #c2c0bd;
+      font-family: BryantPro;
+      font-weight: 500;
+   }
+   .coleccionables:hover {
+      color: rgba(0,0,0,.7);
+      text-decoration: none;
+   }
+   .nosotros-father .dropdown-menu {
+     top: 40px !important;
+   }
+   </style>
+ </div>
+ $('.principal').append('<a class="d-flex appended mt-1" href="/autofrecuente"><img src="https://ik.imagekit.io/autoenlinea/Banner_AF_9ae547c02c_62eYzJkqs.png" alt="."></a>');
+ $('#coleccionables').addEventListener('click', function() {
+   window.location.href = 'https://automercado.cr/coleccionables'; // Replace with your desired link
+});
