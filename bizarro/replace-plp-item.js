@@ -4,9 +4,6 @@ var textCuota = '';
 var textCantCuota = '';
 // Selecciona todos los divs con la clase 'product-message'
 var items = document.querySelectorAll('.product-message');
-
-// Crear un nuevo div
-var newDiv = document.createElement('div');
 // Iterar sobre cada div 'item'
 items.forEach(function(item) {
     // Comprobar si el div tiene la clase específica
@@ -25,5 +22,13 @@ items.forEach(function(item) {
  
     item.innerHTML = 'Mismo precio en '+textCantCuota+' de '+textCuota;
     item.classList = 'newGreen';
+});
+
+// Crear un nuevo div
+console.log('mememe');
+var container = document.querySelectorAll('.product-item-details');
+container.forEach(function(elem) {
+    // Comprobar si el div tiene la clase específica
+    elem.innerHTML = elem.innerHTML + '<div class="rowShipping"><span class="shippingTime">Recibilo en 7 días.</span></div>';
 });
 

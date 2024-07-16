@@ -7,4 +7,19 @@
 }
 .newGreen {
     color: green;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.shippingTime {
+    background: grey;
+    color: white;
+    padding: 5px;
+}
+.rowShipping {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-top: 5px;
 }
