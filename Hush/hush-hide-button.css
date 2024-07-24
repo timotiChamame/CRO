@@ -7,6 +7,10 @@
     color: white !important;
 }
 
+.vtex-flex-layout-0-x-flexRow .vtex-flex-layout-0-x-flexRow--buy-btns-container {
+    display: none;
+}
+
 @media (max-width: 468px) {
     .hideMobileAB {
         display: none !;
