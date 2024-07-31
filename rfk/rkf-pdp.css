@@ -1,0 +1,34 @@
+.newGreen {
+    color: #fff;
+    border-radius: .25rem;
+    border: 1px solid #004714;
+    background: #004714;
+    cursor: pointer;
+    padding: 3px;
+    font-size: 12px;
+    height: 15px;
+    font-weight: 700;
+}
+
+.textAB {
+    width: 215px;
+    font-size: 14px;
+}
+
+.textAB:before {
+    content: "";
+    display: inline-block;
+    width: 27px;
+    height: 15px;
+    background: url(https://zapatoscl.vtexassets.com/arquivos/newenvio2.png) no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    position: relative;
+    vertical-align: middle;
+} 
+
+.holderAB {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
