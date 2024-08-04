@@ -1,0 +1,21 @@
+@media (max-width: 468px) {
+    .vtex-breadcrumb-1-x-container .c-on-base {
+        display: none !important;
+    }
+    h1.t-heading-4 span {
+        font-size: 24px !important;
+    }
+    
+    .vtex-product-price-1-x-currencyContainer--pdp-list-price,
+    .vtex-product-price-1-x-sellingPriceValue--pdp-selling-price {
+        font-size: 16px !important;
+    }
+
+    .vtex-product-price-1-x-sellingPrice--pdp-selling-price--hasListPrice {
+        margin-left: 5px !important;
+    }
+
+    .vtex-breadcrumb-1-x-container .vtex-breadcrumb-1-x-arrow.vtex-breadcrumb-1-x-termArrow.ph2.c-muted-2:last-child {
+        display: none;
+    }
+}
