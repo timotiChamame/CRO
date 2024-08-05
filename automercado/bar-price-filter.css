@@ -1,0 +1,65 @@
+.price-range-section h6 {
+    margin-bottom: 10px; /* Espacio entre el título y la barra de progreso */
+    color: #333; /* Color del texto para el título */
+    font-size: 16px; /* Tamaño de la fuente para el título */
+    text-align: left; /* Alineación del texto del título */
+  }
+  .price-range {
+    width: 100%;
+    padding: 10px 0; /* Asegura un poco de espacio vertical alrededor de la barra */
+    position: relative; /* Asegura que los precios sean posicionados relativo a esto */
+  }
+  
+  .price-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: calc(100% - 30px); /* Reducir el ancho para dar espacio a los precios */
+    height: 8px;
+    background: #ddd;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+    border-radius: 10px;
+    margin: 0 15px; /* Añade márgenes laterales para separar los precios de la barra */
+  }
+  
+  .price-slider:hover {
+    opacity: 1;
+  }
+  
+  .price-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #4CAF50;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .price-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #4CAF50;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .price-labels {
+    display: flex;
+    justify-content: space-between; /* Distribuye el contenido (etiquetas de precios) */
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 50%; /* Posiciona las etiquetas de precios en el centro verticalmente */
+    transform: translateY(-50%);
+    padding: 0 10px; /* Ajustar según necesidad para alinear con los extremos de la barra */
+  }
+  
+  .price-start, .price-end {
+    font-size: 16px; /* Tamaño de fuente más legible */
+    color: #666; /* Color del texto más suave */
+    background: #fff; /* Fondo blanco para sobreponerse a la barra si es necesario */
+    padding: 2px 5px; /* Pequeño padding para separación */
+    border-radius: 4px; /* Bordes redondeados */
+  }
