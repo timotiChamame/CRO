@@ -1,10 +1,6 @@
 
   <style>
-.vtex-rich-text-0-x-wrapper--shipping-calcular-envio .vtex-rich-text-0-x-paragraph--shipping-calcular-envio:before {
-    background: none !important;
-    width: 0 !important;
-  }
-  .newGreen {
+.newGreen {
     color: #fff;
     border-radius: .25rem;
     border: 1px solid #004714;
@@ -14,11 +10,29 @@
     font-size: 12px;
     height: 15px;
     font-weight: 700;
-  	margin-left: 5px;
+  	margin-right: 5px;
+}
+.vtex-rich-text-0-x-wrapper--shipping-calcular-envio .vtex-rich-text-0-x-paragraph--shipping-calcular-envio:before {
+  background: none !important;
+  width: 0 !important;
+}
+p.vtex-rich-text-0-x-paragraph--shipping-calcular-envio-no:before {
+  content: 'Nuevo';
+  color: #fff;
+  border-radius: .25rem;
+  border: 1px solid #004714;
+  background: #004714;
+  cursor: pointer;
+  padding: 3px;
+  font-size: 12px;
+  height: 17px;
+  font-weight: 700;
+  margin-right: 5px;
+  width: 39px;
 }
   </style>
   <script>
-    $('p.vtex-rich-text-0-x-paragraph--shipping-calcular-envio').append('<span class="newGreen">Nuevo</span>');
+    $('p.vtex-rich-text-0-x-paragraph--shipping-calcular-envio').prepend('<span class="newGreen">Nuevo</span>');
     /* CUSTOM CODE */
     vwo_$.getScript( "https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js" , function ( data, textStatus, jqxhr ) {
     /*
