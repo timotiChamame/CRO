@@ -67,4 +67,8 @@
     .responsive-filter-button.banner-filter-button {
         display: none !important;
     }
+
+    .shopify-section.carousel-category-container {
+        margin-left: 18px !important;
+    }
 }
