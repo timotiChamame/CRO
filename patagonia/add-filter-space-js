@@ -1,0 +1,25 @@
+$('.swiper-wrapper').append('<div class="swiper-slide slide-category">         </div>');
+$(document).ready(function() {
+    // Selecciona todos los divs con la clase 'miClase1'
+    $('.collection-banner-wrapper h1').each(function() {
+        // Obtiene el texto dentro del div
+        var texto = $(this).text();
+        // Cuenta la cantidad de caracteres
+        var cantidadCaracteres = texto.length;
+        var ancho = $(window).width();
+        // Verifica si es más largo que 30 caracteres
+        if (cantidadCaracteres > 30) {
+            if (ancho >= 468) {
+                // Aplica un estilo al div con la clase 'miClase2'
+                $('.collection-banner-wrapper').css('min-height', '120px');
+                $('.collection-banner-wrapper').css('height', '120px'); 
+            } else {
+                $('.collection-banner-wrapper').css('min-height', '150px');
+                $('.collection-banner-wrapper').css('height', '150px'); 
+            }
+        } else {
+            $('.collection-banner-wrapper').css('min-height', '100px');
+            $('.collection-banner-wrapper').css('height', '100px');
+        }
+    });
+});
